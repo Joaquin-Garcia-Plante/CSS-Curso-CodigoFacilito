@@ -1,0 +1,41 @@
+/* !Custom properties */
+/* Mejor conocidas como variables en css, nos permiten almacenar valores en ellas */
+
+:root {
+  /* Por la especificidad de la pseudoclase root nos conviene colocar las custom aqui */
+  --bordes-colores: 3px solid black;
+  --color-principal: royalblue;
+  --pading-botones: 15px 30px;
+  --gradiente: linear-gradient(slateblue, pink);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  border: var(--bordes-colores);
+  color: var(--color-principal);
+}
+
+.container {
+  --color-principal: crimson;
+}
+
+.btn {
+  border: var(--bordes-colores);
+  display: inline-block;
+  padding: var(--pading-botones);
+  background-image: var(--gradiente);
+  color: white;
+  text-decoration: none;
+}
+
+.paragraph {
+  border: var(--bordes-colores);
+  color: var(--color-principal);
+}

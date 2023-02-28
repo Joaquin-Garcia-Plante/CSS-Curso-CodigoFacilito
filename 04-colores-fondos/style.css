@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    margin: 70px;
+
+    /* !Color de un texto */
+    /* Podemos agregar los colores por texto o por rgb */
+    /* color: white; */
+    color: rgb(215, 219, 221);
+
+    /* !Color de fondo */
+    background-color: #E67E22;
+}
+
+.background {
+    /* width: 500px; */
+    height: 600px;
+    /* margin: 50px; */
+
+    /* background-color: #E67E22; */
+
+    /* Podemos seleccionar la imagen de fondo utilizando la funcion url para indicar la ubicacion de la imagen en el directorio */
+    /* background-image: url("./images/circulo_cromatico.jpg"); */
+
+    /* Con la propiedad contain se ajusta al ancho del contenedor */
+    /* background-size: 100px; */
+
+    /* Evitamos que se repita la imagen */
+    /* background-repeat: no-repeat; */
+
+    /* background-position: center; */
+
+
+    /* !Generar un degradado de color */
+    background-image: linear-gradient(rgba(105, 90, 205, 0.733), rgba(255, 105, 180, 0.37)), url("./images/circulo_cromatico.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    padding: .1px;
+}
+
+h2 {
+    margin-top: 100px;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}

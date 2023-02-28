@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.element {
+  margin: 80px auto;
+  width: 200px;
+  height: 200px;
+  background-color: slateblue;
+
+  /* Agregar sombras a nuestros elementos */
+  /* Genera una sombra exacta en nuestro elemento y necesita el offset en x y el offset en y */
+  /* El proximo valor es el blur, nos sirve para difuminar */
+  box-shadow: 10px 10px 10px blue, 20px 20px;
+
+  /* Es un shorthand */
+  /* Es decir puedo redondear cada borde si quisiera */
+  border-radius: 50px;
+}

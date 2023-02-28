@@ -1,0 +1,55 @@
+.caja {
+    background-color: steelblue;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* !Ancho */
+    /* width: 200px; */
+    /* !Ancho maximo */
+    /* max-width: 300px; */
+    /* !Ancho minimo */
+    /* min-width: 150px; */
+    /* !Alto */
+    /* height: 100px; */
+    /* !Utilizamos esta propiedad para que todo lo que desborde de un elemento se esconda */
+    /* overflow: hidden; */
+    width: 200px;
+    height: 200px;
+    /* !Padding */
+    /* Añadir padding incrementa el ancho y el alto del elemento */
+    padding: 30px 50px;
+    /* !Border */
+    border-color: purple;
+    border-style: solid;
+    /* Tambien es shorthand */
+    border-width: 20px;
+    /* Definir el estilo de las lineas del border, tambien es shorthand */
+    border-style: solid;
+
+}
+
+.caja1 {
+    /* El valor auto rellena los margenes hasta llevarlos al borde. Si aplicamos auto en left y rigth el elemento se centrará horizontalmente */
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    margin-left: 10px;
+}
+
+/* Colapso de margenes: Cuando dos margenes se encuentran el mas grande prevalece, no se suman. Esto solo aplica a los margenes verticales */
+.main {
+    background-color: steelblue;
+    color: white;
+    margin-bottom: 30px;
+    padding: .1px;
+}
+
+.main-title {
+    margin-top: 40px;
+}
+
+.footer {
+    color: white;
+    background-color: slateblue;
+    margin-top: 50px;
+}

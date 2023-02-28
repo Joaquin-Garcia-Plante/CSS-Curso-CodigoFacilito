@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.element {
+  margin: 80px auto;
+  width: 50%;
+  height: 200px;
+  background-color: crimson;
+
+  /* !Media Queries */
+  /* Los media queries nos permiten modificar el comportamiento de los elementos dependiendo de el ancho o el alto del viewport */
+}
+
+/* !Declaracion de media queries */
+/* Si se cumple la condición que esta dentro del media, todos los selectores que esten dentro de este se van a aplicar */
+/* Max width en un media query indica el valor maximo que tiene que tener el viewport para que se apliquen los estilos dentro del media query */
+
+/* @media (min-width: 500px) {
+  body {
+    background-color: aqua;
+  }
+  .element {
+    background-color: crimson;
+  }
+} */
+/* !Orden de los media queries */
+/* Cuando usemos media queries con max-width siempre sera del mayor al menor */
+/* Cuando usemos min-width sera del media query menor al mayor */
+
+@media (max-width: 800px) {
+  .element {
+    background-color: crimson;
+  }
+}
+
+@media (max-width: 500px) {
+  .element {
+    background-color: blueviolet;
+  }
+}
+
+@media (min-width: 600px) {
+  .element {
+    background-color: aqua;
+  }
+}
+
+@media (min-width: 900px) {
+  .element {
+    background-color: brown;
+  }
+}

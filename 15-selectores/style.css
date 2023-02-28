@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+  margin: 50px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 20px 0;
+  text-align: center;
+  width: 200px;
+  transition: 1s all;
+}
+
+/* Selector de hermano adyacente */
+/* Este selector se compone de dos selectores */
+/* Selecciona al hermano siguiente y solamente al hermano siguiente */
+/* Si no tiene hermano siguiente no selecciona a ningun elemento */
+/* Debe haber un signo entre ambos */
+
+/* !sintaxis:
+.elemento-referencia + .hermano-siguiente {
+
+} */
+
+/* Selector de hermanos generales */
+/* Selecciona a todos los hermanos siguientes del primer selector que cumplan la condicion del segundo selector */
+
+.btn-blue {
+  background-color: slateblue;
+}
+
+/* .btn-blue:active {
+  font-size: 30px;
+}
+
+.btn-blue:hover {
+  background-color: black;
+} */
+
+.btn-red {
+  background-color: crimson;
+}
+
+/* .btn-red:hover {
+  transform: scale(1.2);
+} */
+
+.btn-tomato {
+  background-color: tomato;
+}
+
+.input {
+  display: block;
+  margin: 20px;
+  padding: 16px;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+/* .input:focus + .label {
+  background-color: aqua;
+} */
+
+.label {
+  background-color: crimson;
+  color: white;
+}
+
+.check {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.check:checked + label {
+  background-color: green;
+}
+
+/* Todas las pseudoclases empiezan con dos puntos seguido de el nombre de la pseudoclase */
+/* .btn-blue:hover ~ .button {
+  transform: translate(100%);
+} */
+
+.element {
+  width: max-content;
+  padding: 20px;
+  background-color: steelblue;
+  color: white;
+  font-size: 30px;
+  margin: 60px;
+}
+
+.element:target {
+  /* background-color: black; */
+  transform: translate(100%);
+}
+
+/* .element:hover {
+  width: 300px;
+} */
+
+/* !Pseudo elementos, empiezan con :: */
+/* ::befor y ::after permiten crear elementos (de html) en css */
+/* La diferencia entre ambos es que el contenido de before se crea antes y after agrega el contenido despues */
+
+.element::before {
+  content: "Hola";
+  background-color: green;
+  display: block;
+}
+
+.element::after {
+  content: "Soy jordan";
+  background-color: crimson;
+  display: block;
+}

@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.element {
+  width: 200px;
+  height: 200px;
+  background-color: slateblue;
+  margin: 60px;
+
+  /* !Translate nos permite mover nuestros elementos en el eje x o y, para valores positivos en el eje x se movera de izquierda a derecha y para valores negativos se movera de derecha a izquierda; en el eje y para valores positivos se movera de abajo hacia arriba y para valores negativos de arrriba hacia abajo */
+  /* transform: translateX(100%); */
+
+  /* !Rotate nos permite rotar nuestros elementos, solo acepta valores angulares */
+  transform: rotate();
+}
+
+.element2 {
+  background-color: tomato;
+  transform: unset;
+}

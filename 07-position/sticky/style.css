@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 300vh;
+}
+
+.container {
+  height: 300px;
+  width: 200vw;
+  background-color: teal;
+}
+
+.sticky {
+  height: 140px;
+  width: 140px;
+  background-color: slateblue;
+
+  /* Es tratado como un posicionamiento relative hasta que llegue un punto, luego de este, se vuelve fixed */
+  /* Es decir que se pega hasta que alcance el limite de su padre, cuando pasa a su padre se deja de pegar */
+  /* Las propiedades offset sirven para indicar a que distancia ese contenedor se volvera fixed */
+  /* Los offset definen a que distancia tienen que estar de la parte superior del viewport para que se peguen */
+  /* Mientras no este a esa distancia se comporta como relative */
+  /* Si esta contenido dentro de un contenedor los offset tomaran eso como referencia */
+  position: sticky;
+  /* top: 50px; */
+  top: 40px;
+  left: 40px;
+}

@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+  /* width: 90%;
+  max-width: 800px; */
+  width: 400px;
+  min-height: 600px;
+  margin: 80px auto;
+  outline: 3px solid black;
+
+  /* Para utilizar flexbox debemos tener un contenedor que contenga minimo a un elemento */
+  /* !Display flex */
+  /* Al utilizar esta propiedad nuestros elementos se colocan uno al lado de otro */
+  display: flex;
+
+  /* !Direccion de los ejes */
+  /* Por defecto va de izquierda a derecha */
+  /* flex-direction: column; */
+
+  /* !Flex wrap  */
+  /* Define el comportamiento de los hijos (items) del flex container */
+  /* Por defecto cuando la suma del tamaño de sus items es mayor que su contenedor los encoje para que entren, con wrap creará una segunda fila/columna */
+  /* flex-wrap: wrap; */
+
+  /* !Alineación */
+  /* Se puede cambiar la alineacion de los flex items dentro del container */
+  /* Se puede cambiar la alineacion en el main axis o en el cross axis */
+
+  /* !Main axis */
+  /* Para usar esta propiedad debemos tener espacio disponible */
+  /* justify-content: space-evenly; */
+
+  /* !Cross axis */
+  /* align-items: center; */
+  /* align-content: space-evenly; */
+}
+
+.element {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 100px;
+  width: 200px;
+  height: 100px;
+
+  /* Factor de crecimiento en los flex items */
+  /* Determina cuanto van a tomar de espacio disponible los flex items en relacion a otros */
+  /* flex-grow: 1; */
+
+  /* Es similar al flex grow nada mas que administra el espacio faltante */
+  /* flex-shrink: 1; */
+
+  /* !Flex basis */
+  /* Indica el tamaño del elemento antes de que se aplique flex grow o flex shrink */
+  /* Por defecto es auto, define el tamaño de los flex items en el main axis */
+  /* Este tamaño es mas importante que el width que le asignemos al elemento */
+  /* flex-basis: 150px; */
+}
+
+.element1 {
+  background-color: crimson;
+  /* order: 2; */
+}
+
+.element2 {
+  background-color: darkmagenta;
+  /* flex-grow: 2; */
+  /* flex-shrink: 2; */
+  /* order: 1; */
+}
+
+.element3 {
+  background-color: slateblue;
+  /* order: -1; */
+  /* !Alinear flex items */
+  /* Alinea a traves del cross axis */
+  align-self: center;
+}

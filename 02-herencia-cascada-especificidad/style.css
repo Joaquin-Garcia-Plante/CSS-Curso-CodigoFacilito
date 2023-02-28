@@ -1,0 +1,36 @@
+/* La cascada nos indica que los ultimos estilos en ser declarados sobreescribiran a los primeros */
+/* Es decir que siempre se va a aplicar el ultimo estilo declarado */
+/* La especificidad es el primer metodo que define a que elementos se le aplicaran los estilos */
+/* La especificidad se mide por el valor de los selectores, es decir el que tenga mayor valor será el estilo que se aplicará */
+
+/* Herencia
+Cuando definimos un estilo o algo todos los elementos que esten dentro van a heredar los estilos de su ancestro */
+/* Si yo defino un hijo con otro estilo se anula */
+/* No todas las propiedades son heredables */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* h1 { */
+/* Vemos que por especificidad el color no se esta aplicando pero si el tamaño de fuente */
+/* color: tomato; */
+/* font-size: 100px; */
+/* } */
+
+/* #title { */
+/* color: rebeccapurple */
+/* } */
+
+/* .title {
+    color: blue !important;
+} */
+
+
+/* Valor de los selectores:
+1 - Selector de tipos o pseudo elementos
+10 - Selector de clases y pseudoclases
+100 - Selector de id */
+
+/* Se puede utilizar la bandera !important para indicar que es mas importante que cualquier otro estilo que se le haya agregado antes */

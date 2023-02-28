@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 90%;
+  height: 500px;
+  border: 2px solid black;
+  margin: 80px auto;
+  position: relative;
+}
+
+.position {
+  width: 150px;
+  height: 100px;
+  font-size: 1.3rem;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+}
+
+.static {
+  background-color: darkcyan;
+  /* Este es el valor por defecto de los elementos */
+  position: static;
+}
+
+.relative {
+  /* Se va a mover en base a su ancestro contenedor mas cercano que tenga un position diferente a static */
+  /* Si esta condicion no se da, se va a mover en base al viewport */
+  background-color: tomato;
+  /* Por defecto no hay cambios con respecto al estatico, pero esta propiedad desbloquea cuatro propiedades mas */
+  position: relative;
+  /* top: 100px;
+  left: 200px; */
+  z-index: 10;
+}
+
+.absolute {
+  background-color: purple;
+  /* El elemento es removido del flujo natural del documento */
+  /* En simples palabras, el elemento no "reserva" ningun lugar dentro del documento */
+  position: absolute;
+  top: 80px;
+  left: 20px;
+  /* top: 30px;
+  right: 30px; */
+  z-index: 100;
+}
+
+.fixed {
+  /* Un elemento con posicion fixed tambien es removido del flujo natural del documento */
+  /* Se posiciona en base al vieport */
+  /* Se va a quedar "pegado" en donde lo posicionemos */
+  background-color: slateblue;
+  position: fixed;
+  top: 120px;
+  left: 80px;
+
+  /* !z-index */
+  /* Todos los elementos con un posicionamiento distinto a static pueden utilizar la propiedad z-index que definen el orden de apilamiento */
+  /* !z-index auto */
+  /* En su valor por defecto el elemento que estara por encima de otros será el ultimo elemento que se escribio en el html */
+  /* La propiedad permite valores enteros, y el elemento que tenga un valor z-index mas alto que otro se posicionará por encima de el */
+  z-index: 50;
+}

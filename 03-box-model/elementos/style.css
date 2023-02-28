@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.element {
+    /* Con la propiedad box-sizing podemos definir el tamaño de la caja, este toma el width: y el height: como tamaños absolutos y no les suma el valor del padding y border */
+    width: 250px;
+    height: 250px;
+    background-color: purple;
+    border: 30px solid steelblue;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+body {
+    font-size: 25px;
+}
+
+.block {
+    background-color: teal;
+    color: white;
+    padding: 30px;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.inline {
+    display: inline-block;
+    background-color: crimson;
+    color: white;
+}
+
+.button {
+    display: block;
+    background-color: steelblue;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 40px;
+    border-radius: 25px;
+    width: 230px;
+    margin: 0 auto;
+}

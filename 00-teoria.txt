@@ -1,0 +1,39 @@
+<Principios básicos de CSS>
+
+* Selector
+Define a que elemento o elementos vamos a añadirle estilos
+Sintaxis: 
+
+nombre del elemento{
+    # Estilos
+}
+
+* Propiedad
+Es la caracteristica de un elemento por ejemplo color, margen, etc
+Sintaxis:
+
+nombre de la propiedad:
+
+* Valor
+Es lo que sigue despues de definir la propiedad, terminamos con una coma para indicar que el valor de la propiedad finalizo
+
+Ejemplo:
+h2{
+    color:red,
+}
+
+$ Box model
+Hay que entender que en CSS todos los elementos son tratados como cajas y cada caja tiene propiedades que pueden ser modificadas
+
+*shorthand property: Es una forma de abreviar distintas propiedades en una sola. Por ejemplo padding
+
+$ Unidades de medida
+
+* Absolutas
+Se llaman absolutas porque tienen un valor definido, es decir que no dependen de nada mas.
+
+* Relativas
+Se llamana asi porque su tamaño dependen de algo externo a ellas, dependiendo el contexto su valor puede cambiar
+
+$ Viewport
+Es el área visible del navegador, incluye al scroll

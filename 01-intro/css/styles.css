@@ -1,0 +1,53 @@
+h1 {
+  color: cadetblue;
+  font-size: 60px;
+  text-align: center;
+}
+
+/* !Selectores:
+Define que elementos del html seran modificados */
+
+/* !Selector de tipo / etiqueta */
+/* Selecciona a una etiqueta del html por una etiqueta */
+/* h2, (se pueden agregar mas etiquetas) {
+  color: blue;
+  font-size: 30px;
+} */
+
+/* !Selector de clase */
+/* Como indica su nombre selecciona a todos los elementos del html que contengan esa clase */
+
+.titulo {
+  color: brown;
+  font-size: 30px;
+  border: 1px solid black;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+/* !Selector de ID */
+/* Este selector aplica estilos a las estiquetas con el id que seleccionemos */
+#titulo {
+  color: steelblue;
+  font-size: 50px;
+}
+
+/* !Selector universal */
+/* Selecciona a todos los elementos del html */
+/* * {
+  color: rebeccapurple;
+} */
+
+/* !Selectores combinados */
+
+/* !Modificar todos los selectores2 que se encuentren dentro de selector1 */
+/* selector1 selector2{
+
+} */
+
+/* !Modificar unicamente los selector2 que sean hijos directos de selector1 */
+/* selector1>selector2{
+
+} */

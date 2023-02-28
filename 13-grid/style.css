@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 90%;
+  height: 600px;
+  outline: 2px solid;
+  margin: 80px auto;
+
+  /* CSS grid es un sistema bidimensional que nos permite crear filas y columnas */
+  display: grid;
+
+  /* !Crear columnas en la grid */
+  /* Podemos usar cualquier unidad de medida dentro de la propiedad */
+  /* El valor indica el tamaño de la columna */
+
+  /* !Funcion repeat */
+  /* Esta funcion recibe dos parametros, el primer parametro es la cantidad de veces que se repite y el segundo el valor */
+  grid-template-columns: repeat(5, 1fr);
+
+  /* !Crear filas en la grid */
+  grid-template-rows: repeat(5, 1fr);
+  /* Por defecto */
+  /* Las filas que no declare van a tener un tamaño auto y ese auto va a tomar el espacio disponible */
+  /* grid-auto-rows: 100px 200px; */
+
+  /* !Generar un espacio entre las filas */
+  row-gap: 30px;
+
+  /* !Generar un espacio entre las columnas */
+  column-gap: 10px;
+}
+
+.item {
+  /* width: 100px; */
+  /* height: 100px; */
+  font-size: 2em;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item1 {
+  background-color: slateblue;
+  /* Grid column nos permite recibir dos valores como coordenadas */
+  /* El primer valor es la linea de inicio o donde partira nuestro grid item */
+  /* El segundo es la linea final donde va a terminar nuestro item */
+  grid-column: 1/6;
+  grid-row: 1/3;
+}
+
+.item2 {
+  background-color: deeppink;
+  grid-column: 1/3;
+  grid-row: 3/5;
+}
+
+.item3 {
+  background-color: tomato;
+  grid-column: 3/6;
+  grid-row: 3/5;
+}
+
+.item4 {
+  background-color: darkseagreen;
+  grid-column: 1/3;
+}
+
+.item5 {
+  background-color: midnightblue;
+  grid-column: 3/6;
+}

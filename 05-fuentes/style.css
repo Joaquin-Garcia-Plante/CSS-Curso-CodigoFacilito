@@ -1,0 +1,81 @@
+/* !Importando fuentes de google */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    /* !Definir lista de fuentes */
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background-color: slateblue;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.img {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.title {
+    /* !Espacio entre letras en el texto */
+    /* letter-spacing: 1.5px; */
+
+    /* !Espacio entre palabras */
+    /* word-spacing: 10px; */
+
+    /* width: 150px; */
+
+    /* Si colocamos un borde el contenedor esta definido por el borde por lo tanto puede desbordar */
+    /* border: 2px solid white; */
+
+    /* Detecta donde puede colocar un guion medio y crea un salto de linea para evitar que el texto desborde */
+    hyphens: auto;
+
+    /* Define si el navegador debe crear un salto de linea si el texto es demasiado grande para el contenedor */
+    /* Genera un salto de linea sin importar la ultima letra */
+    /* Default: normal */
+
+    overflow-wrap: break-word;
+
+    /* Nos permite transformar el texto a mayusculas o minusculas */
+    /* text-transform: lowercase; */
+
+    /* !Alinear horizontalmente a los elementos en linea */
+    text-align: center;
+
+    /* !Tamaño de fuente */
+    font-size: 35px;
+
+    /* !Estilo de texto */
+    font-style: italic;
+
+    /* !Alto de linea */
+    /* Multiplica el tamaño de la fuente por el valor que le demos a la propiedad */
+    line-height: 1;
+}
+
+.paragraph {
+    text-transform: uppercase;
+}
+
+.paragraph--first {
+    text-transform: lowercase;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    /* border: 1.5px solid crimson; */
+
+    /* !Ancho de fuente */
+    font-weight: 100;
+    line-height: 2;
+}
