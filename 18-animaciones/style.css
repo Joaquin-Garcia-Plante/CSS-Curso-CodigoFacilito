@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.element {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  margin: 60px;
+  border-radius: 50%;
+
+  /* !Las animaciones en css permiten animar elementos sin utilizar disparadores y podemos controlar el flujo de la animacion */
+
+  /* El nombre representa a un keyframes */
+  /* A los keyframes le daremos un nombre */
+  animation-name: mover;
+  animation-duration: 1s;
+  /* !Definir cuantas veces se va a repetir la animacion */
+  animation-iteration-count: 1;
+
+  /* Normal- regresa de golpe al 0% */
+  /* animation-direction: normal; */
+
+  /* Reverse- empieza en el 100% y termina en el 0% */
+  /* animation-direction: reverse; */
+
+  /* Alternate- va del 0 al 100% y una vez que llega al 100% regresa al 0% animando */
+  animation-direction: normal;
+
+  /* !Definir lo que sucede antes y despues de que suceda la animacion */
+  /* Se encarga de decirle al navegador si los estilos de la animacion se aplican despues de que termine la animacion o antes de que empiece */
+
+  /* Seguir aplicando los estilos donde la animacion haya terminado */
+  /* animation-fill-mode: forwards; */
+
+  /* Antes de que empiece la animacion va a tener los estilos definidos en el 0% */
+  animation-fill-mode: backwards;
+
+  /* Es lo mismo que tener forwards y backwards */
+  /* animation-fill-mode: both; */
+
+  /* !Definir si una animacion esta en pausa o corriendo */
+  /* animation-play-state: ; */
+
+  /* El shorthand es animation */
+}
+
+@keyframes mover {
+  0% {
+    transform: translate(0);
+    background-color: crimson;
+  }
+  25% {
+    transform: translate(100%);
+    background-color: salmon;
+  }
+  50% {
+    transform: translate(100%, 100%);
+    background-color: slateblue;
+  }
+  75% {
+    transform: translate(0, 100%);
+    background-color: teal;
+  }
+  100% {
+    transform: translate(100%, 100%);
+  }
+}
+
+@keyframes crecer {
+  0% {
+    transform: scaleY(1);
+  }
+  20% {
+    transform: scaleY(1.2);
+  }
+  40% {
+    transform: scaleY(2);
+  }
+  60% {
+    transform: scaleY(1.5);
+  }
+  100% {
+    transform: scaleY(2.3);
+  }
+}
+
+@keyframes cambia-color {
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: slateblue;
+  }
+}
