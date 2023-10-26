@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario animado</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form class="form">
+      <h2 class="form_title">Inicia Sesión</h2>
+      <p class="form_paragraph">
+        ¿Aún no tienes una cuenta?
+        <a href="" class="form_link">Regístrate</a>
+      </p>
+      <div class="form_container">
+        <div class="form_group">
+          <input type="text" class="form_input" placeholder=" " id="name" />
+          <label for="name" class="form_label">Nombre:</label>
+          <span class="form_line"></span>
+        </div>
+        <div class="form_group">
+          <input type="text" class="form_input" placeholder=" " id="user" />
+          <label for="user" class="form_label">Usuario:</label>
+          <span class="form_line"></span>
+        </div>
+        <div class="form_group">
+          <input
+            type="password"
+            class="form_input"
+            placeholder=" "
+            id="password"
+          />
+          <label for="password" class="form_label">Contraseña:</label>
+          <span class="form_line"></span>
+        </div>
+        <input type="submit" class="form_submit" value="Entrar" />
+      </div>
+    </form>
+  </body>
+</html>
